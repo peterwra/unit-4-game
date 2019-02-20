@@ -8,21 +8,49 @@
     <!-- Link to the jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
     <!-- AND/OR YOUR OWN CSS -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Link to your JavaScript -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </head>
 
 <body>
 
-    <!-- Link to your JavaScript -->
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <!-- Name of game -->
+    <div id="gameName" class="textFormatting"><h1>Crystal Collector</h1></div>
+
+    <!-- Instructions for game -->
+    <div id="gameInstructions" class="textFormatting">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. Clicking on a crystal will
+            add a specific amount of points to your score.</p>
+        <p>You win the game by matching your total score to the random
+            number. If you go over the random number, you lose!</p>
+        <p>The random value assigned to each crystal is hidden from
+            you until you click on it.</p>
+        <p>Each time the game starts, it will change the value of
+            the crystals as well as the target number to reach.</p>
+    </div>
+
+    <!-- Crystal Images -->
+    <div id="crystalImages">
+        <img id="crystalOne" class="crystalFormatting crystalClicking">
+        <img id="crystalTwo" class="crystalFormatting crystalClicking">
+        <img id="crystalThree" class="crystalFormatting crystalClicking">
+        <img id="crystalFour" class="crystalFormatting crystalClicking">
+    </div>
+
+    <!-- Random number to reach -->
+    <div id="gameNumber" class="textFormatting"></div>
+
+    <!-- Wins/Losses Tally -->
+    <div id="winsLosses" class="textFormatting"></div>
+
+    <!-- Total score -->
+    <div id="totalScore" class="textFormatting"></div>
 
 </body>
 
